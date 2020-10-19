@@ -55,7 +55,7 @@
 				"header": [
 					{
 						"key": "token",
-						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MDMxNDUwNTgsImVtYWlsIjoibHVjaWFAZ21haWwuY29tIiwidGlwbyI6ImFkbWluIn0.4EH1n7U_P3u-MgcCk2gLLPlyDtuH2eHiX42DHTY5z5g",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MDMxNDk2NDAsImVtYWlsIjoibHVjaWFAZ21haWwuY29tIiwidGlwbyI6ImFkbWluIn0.-_v_6NkboULVLrtbdA0YI6CHCk4E6rFojBrJEW3lYZk",
 						"type": "text"
 					}
 				],
@@ -107,17 +107,17 @@
 						},
 						{
 							"key": "modelo",
-							"value": "argo",
+							"value": "uno",
 							"type": "text"
 						},
 						{
 							"key": "patente",
-							"value": "aaa123",
+							"value": "ttt124",
 							"type": "text"
 						},
 						{
 							"key": "precio",
-							"value": "650000",
+							"value": "300000",
 							"type": "text"
 						}
 					]
@@ -136,11 +136,36 @@
 		},
 		{
 			"name": "punto4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MDMxNDk2NDAsImVtYWlsIjoibHVjaWFAZ21haWwuY29tIiwidGlwbyI6ImFkbWluIn0.-_v_6NkboULVLrtbdA0YI6CHCk4E6rFojBrJEW3lYZk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
 				"url": {
-					"raw": ""
+					"raw": "{{url}}/patente?patente=aaa123",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"patente"
+					],
+					"query": [
+						{
+							"key": "patente",
+							"value": "aaa123"
+						}
+					]
 				}
 			},
 			"response": []
@@ -176,7 +201,7 @@
 						},
 						{
 							"key": "demora",
-							"value": "4hs",
+							"value": "2hs",
 							"type": "text"
 						}
 					]
@@ -196,10 +221,37 @@
 		{
 			"name": "punto6",
 			"request": {
-				"method": "GET",
-				"header": [],
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MDMxNDUwNTgsImVtYWlsIjoibHVjaWFAZ21haWwuY29tIiwidGlwbyI6ImFkbWluIn0.4EH1n7U_P3u-MgcCk2gLLPlyDtuH2eHiX42DHTY5z5g",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "patente",
+							"value": "aaa123",
+							"type": "text"
+						},
+						{
+							"key": "fecha",
+							"value": "19/10/20",
+							"type": "text"
+						}
+					]
+				},
 				"url": {
-					"raw": ""
+					"raw": "{{url}}/turno",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"turno"
+					]
 				}
 			},
 			"response": []
