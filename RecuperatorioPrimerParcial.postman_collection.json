@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "8e49fa91-9c1a-413a-b2e4-f0d5c841ea15",
+		"name": "RecuperatorioPrimerParcial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "punto1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "lucia@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "1234",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/registro",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"registro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "punto2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MDMxNDUwNTgsImVtYWlsIjoibHVjaWFAZ21haWwuY29tIiwidGlwbyI6ImFkbWluIn0.4EH1n7U_P3u-MgcCk2gLLPlyDtuH2eHiX42DHTY5z5g",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "lucia@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/login",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "punto3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MDMxNDUwNTgsImVtYWlsIjoibHVjaWFAZ21haWwuY29tIiwidGlwbyI6ImFkbWluIn0.4EH1n7U_P3u-MgcCk2gLLPlyDtuH2eHiX42DHTY5z5g",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "marca",
+							"value": "fiat",
+							"type": "text"
+						},
+						{
+							"key": "modelo",
+							"value": "argo",
+							"type": "text"
+						},
+						{
+							"key": "patente",
+							"value": "aaa123",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "650000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/vehiculo",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"vehiculo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "punto4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "punto5",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MDMxNDUwNTgsImVtYWlsIjoibHVjaWFAZ21haWwuY29tIiwidGlwbyI6ImFkbWluIn0.4EH1n7U_P3u-MgcCk2gLLPlyDtuH2eHiX42DHTY5z5g",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nombre",
+							"value": "mantenimiento",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "10000km",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "12000",
+							"type": "text"
+						},
+						{
+							"key": "demora",
+							"value": "4hs",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/servicio",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"servicio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "punto6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
